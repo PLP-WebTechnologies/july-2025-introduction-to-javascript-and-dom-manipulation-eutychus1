@@ -1,0 +1,64 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: royalpurple; /* Main background */
+  color: white; /* Default text color for contrast */
+  margin: 20px;
+  text-align: center;
+}
+
+h1 {
+  color: #ffffff; /* White for clarity */
+}
+
+.section {
+  border: 2px solid white;
+  padding: 15px;
+  margin: 20px auto;
+  width: 50%;
+  border-radius: 10px;
+  background-color: #6a0dad; /* lighter purple inside sections */
+  transition: transform 0.3s ease;
+  color: #ffffff;
+}
+
+.section:hover {
+  transform: scale(1.02);
+}
+
+button {
+  background-color: white;
+  color: royalpurple;
+  padding: 8px 15px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  font-weight: bold;
+}
+
+button:hover {
+  background-color: #f3e8ff;
+  transform: translateY(-2px);
+}
+
+/* Toggle text animation */
+#toggleText {
+  opacity: 1;
+  transition: opacity 0.5s ease;
+}
+
+#toggleText.hidden {
+  opacity: 0;
+}
+
+/* Countdown fade-in animation */
+.fade-in {
+  opacity: 0;
+  animation: fadeIn 0.8s forwards;
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
